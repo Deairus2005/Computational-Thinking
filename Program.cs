@@ -84,6 +84,21 @@ namespace ComputationalThinkingExercises
 
             // Enter your solution here
 
+            Console.WriteLine("enter first number");
+            int firstNumber = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter second number");
+            int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+            if(firstNumber == secondNumber)
+            {
+                Console.WriteLine("These numbers are equal");
+            }
+            else
+            {
+                Console.WriteLine("These numbers are Not equal");
+            }
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
@@ -97,6 +112,21 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("EVEN OR ODD?\n");
 
             // Enter your solution here
+
+            Console.WriteLine("Enter Number");
+            int userNumber = Convert.ToInt32(Console.ReadLine());
+
+            int result = userNumber % 2;
+
+            if(result == 0)
+            {
+                Console.WriteLine("This number is Even!");
+            }
+            else
+            {
+                Console.WriteLine("This number is Odd!");
+            }
+
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -112,6 +142,20 @@ namespace ComputationalThinkingExercises
 
             // Enter your solution here
 
+            Console.WriteLine("Enter A Letter");
+            string inputLetter = Console.ReadLine();
+
+            if (inputLetter == "a" || inputLetter == "e" || inputLetter == "i" || inputLetter == "o" || inputLetter == "u")
+            {
+                Console.WriteLine("this is a Vowel");
+            }
+            else
+            {
+                Console.WriteLine("this ia a consonant");
+            }    
+
+            
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
@@ -126,6 +170,26 @@ namespace ComputationalThinkingExercises
 
             // Enter your solution here
 
+            Console.WriteLine("Enter First Number");
+            int firstValue = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Second Number");
+            int secondValue = Convert.ToInt32(Console.ReadLine());
+
+
+
+            if (firstValue < secondValue)
+            {
+                Console.WriteLine("Second Value is Largest!");
+            }
+            else if (firstValue > secondValue)
+            {
+                Console.WriteLine("First value is Largest!");
+            }
+            else
+            {
+                Console.WriteLine("Values are equal");
+            } 
 
 
 
@@ -141,6 +205,21 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("DIVISIBLE BY 3\n");
 
             // Enter your solution here
+
+            Console.WriteLine("enter Number");
+            int userNumb = Convert.ToInt32(Console.ReadLine());
+
+            int result = userNumb % 3;
+
+            if (result == 0)
+            {
+                Console.WriteLine("This number is divisible by 3!");
+
+            }
+            else
+            {
+                Console.WriteLine("This number isn Not divided by 3.");
+            }
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
