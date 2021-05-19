@@ -186,7 +186,51 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("AGE CATEGORY\n");
 
             // Enter your solution here
+            Console.WriteLine("Enter your age: ");
+            int age = Convert.ToInt32(Console.ReadLine());
 
+
+            // && means AND
+            // || means OR
+           
+
+            if (age >=0 && age <= 2)
+            {  
+                Console.WriteLine("Still in mama's arms");
+                }
+            else if(age == 3 || age == 4)
+            {
+                Console.WriteLine("Preschool Maniac");
+            }
+            else if(age > 4 && age < 12)
+            {
+                Console.WriteLine("Elementary School");
+            }
+            else if(age > 11 && age < 15)
+            {
+                Console.WriteLine("Middle School");
+            }
+            else if(age > 14 && age < 19)
+            {
+                Console.WriteLine("High School");
+            }
+            else if(age > 18 && age < 20)
+            {
+                Console.WriteLine("College");
+            }
+            else if(age > 22 && age < 66)
+            {
+                Console.WriteLine("Working for the Man");
+            }
+            else if(age > 65 && age < 101)
+            {
+                Console.WriteLine("Golden Years");
+            }
+            else if(age < 0 || age > 100)
+            {
+                Console.WriteLine("This Program is for Humans");
+            }
+            
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
